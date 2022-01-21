@@ -24,7 +24,7 @@ img {
 }
 body {
   font-size: 12px;
-  padding: 5rem 0;
+  padding: 7rem 0 1rem;
   display: flex;
   align-items: center;
   min-height: 100vh;
@@ -39,11 +39,6 @@ main {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-}
-@media (max-height: 578px) {
-  main {
-    align-items: flex-end;
-  }
 }
 .card-cont {
   max-width: 350px;
@@ -61,7 +56,7 @@ main {
 }
 .img-cont {
   position: absolute;
-  top: -54%;
+  top: -47.5%;
   left: 50%;
   transform: translateX(-50%) translateY(50%);
   width: min(90%, 250px);
@@ -122,11 +117,12 @@ main {
 }
 @media (min-width: 768px) {
   body {
+    padding: 0 1rem;
     z-index: 999;
     position: relative;
   }
   main {
-    padding: 0;
+    padding: 0 1rem;
     width: 100%;
     max-width: 1000px;
     position: relative;
