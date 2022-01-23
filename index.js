@@ -23,7 +23,7 @@ function reset() {
 function showAnswer(i) {
   const shownAnswer = reset();
   const answer = asnwers[i];
-  if (answer != shownAnswer) {
+  if (answer !== shownAnswer) {
     questionBtns[i].classList.add("question--active");
     arrows[i].classList.add("rotate-arrow");
     answer.classList.add("show-anser");
